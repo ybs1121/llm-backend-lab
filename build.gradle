@@ -19,6 +19,7 @@ repositories {
 dependencies {
     implementation platform('org.springframework.boot:spring-boot-dependencies:3.5.16')
     implementation platform('org.springframework.ai:spring-ai-bom:1.1.8')
+    implementation 'org.springframework.ai:spring-ai-model'
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-json'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
