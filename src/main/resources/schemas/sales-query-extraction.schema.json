@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SalesQueryExtraction",
+  "type": "object",
+  "properties": {
+    "startDate": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Inclusive start date, or null when undetermined."
+    },
+    "endDate": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Inclusive end date, or null when undetermined."
+    },
+    "limit": {
+      "type": ["integer", "null"],
+      "description": "User-specified count without clamping, or null when omitted. Execution bounds are checked by the server."
+    }
+  },
+  "required": ["startDate", "endDate", "limit"],
+  "additionalProperties": false
+}
